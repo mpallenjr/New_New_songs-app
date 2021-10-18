@@ -1,0 +1,36 @@
+GET http://localhost:3000/songs.json
+###
+POST http://localhost:3000/songs.json
+content-type: application/json
+
+{
+
+"title": "Swing Swing",
+"artist": "AAR",
+"album": "AAR",
+"year": "2002"
+
+
+}
+
+###
+
+GET http://localhost:3000/songs/5.json
+
+###
+
+PATCH http://localhost:3000/songs/1.json
+content-type: application/json
+
+{
+
+"title": "Yeah",
+"artist": "Usher",
+"album": "Atown",
+"year": "2004"
+
+
+}
+
+###
+DELETE http://localhost:3000/songs/5.json
